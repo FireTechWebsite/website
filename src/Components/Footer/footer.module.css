@@ -1,0 +1,32 @@
+.footer {
+	margin-top: auto;
+}
+
+.section-1 {
+	background-color: #ebe9e6;
+	padding: 1rem 1rem;
+}
+
+.section-2 {
+	background-color: #e0e0e0;
+	padding: 1rem 1rem;
+}
+
+.section-title {
+	font-size: 1.5rem;
+}
+
+.credits {
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 0.8rem 0rem;
+}
+
+.link {
+	color: black;
+}
+
+.link:hover {
+	color: black;
+}
