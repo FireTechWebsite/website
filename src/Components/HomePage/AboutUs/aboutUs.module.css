@@ -29,12 +29,12 @@
 	font-size: 2.5rem;
 	text-align: center;
 	color: #f1803a;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
 
 .title {
-	margin: 1rem 0rem;
+	margin: 0.5rem 0rem;
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -52,5 +52,14 @@
 		align-items: center;
 		justify-content: center;
 		padding: 1rem 0rem;
+	}
+
+	.icon {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.title {
+		margin: 1rem 0rem;
 	}
 }

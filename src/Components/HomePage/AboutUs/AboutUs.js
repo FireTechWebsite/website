@@ -12,7 +12,7 @@ const AboutUs = ({ src, alt, aboutUsService1, aboutUsService2, aboutUsService3, 
 	return (
 		<section>
 			<Row className={styles.aboutUs}>
-				<Col xs={6} className={styles.image}>
+				<Col xs={6} md={6} className={styles.image}>
 					<Img fluid={src} />
 				</Col>
 
