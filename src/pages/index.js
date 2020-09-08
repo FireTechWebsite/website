@@ -3,6 +3,7 @@ import Layout from '../Components/Global/Layout/Layout';
 import HeroSection from '../Components/HomePage/HeroSection/HeroSection';
 import { graphql } from 'gatsby';
 import AboutUs from '../Components/HomePage/AboutUs/AboutUs';
+import TitleText from '../Components/Global/TitleText/TitleText';
 
 const Home = ({ data }) => {
 	console.log(data);
@@ -28,6 +29,7 @@ const Home = ({ data }) => {
 				src={aboutUsPic}
 				alt={aboutUsPhotoTitle}
 			/>
+			<TitleText />
 		</Layout>
 	);
 };
