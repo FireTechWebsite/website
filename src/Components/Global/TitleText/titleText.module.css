@@ -1,5 +1,6 @@
 .title-text {
 	text-align: center;
+	margin: 1rem 0rem;
 }
 
 p {
@@ -8,4 +9,9 @@ p {
 
 .title {
 	color: #f1803a;
+}
+
+.content-holder {
+	display: flex;
+	justify-content: center;
 }
