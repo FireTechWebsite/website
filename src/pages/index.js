@@ -1,17 +1,34 @@
 import React from 'react';
 import Layout from '../Components/Global/Layout/Layout';
-import HeroSection from '../Components/HeroSection/HeroSection';
+import HeroSection from '../Components/HomePage/HeroSection/HeroSection';
 import { graphql } from 'gatsby';
 import AboutUs from '../Components/HomePage/AboutUs/AboutUs';
 
 const Home = ({ data }) => {
 	console.log(data);
 
-	const { heroImage: { fluid, title } } = data.allContentfulHomepage.nodes[0];
+	const {
+		heroImage: { fluid, title },
+		aboutUsPhoto: { aboutUsPic, aboutUsPhotoTitle },
+		aboutUsService1,
+		aboutUsService2,
+		aboutUsService3,
+		aboutUsTitle,
+		aboutUsText: { aboutUsText }
+	} = data.allContentfulHomepage.nodes[0];
 	return (
 		<Layout>
 			<HeroSection src={fluid} alt={title} />
-			<AboutUs />
+			<AboutUs
+				aboutUsService1={aboutUsService1}
+				aboutUsService2={aboutUsService2}
+				aboutUsService3={aboutUsService3}
+				aboutUsTitle={aboutUsTitle}
+				aboutUsText={aboutUsText}
+				src={aboutUsPic}
+				alt={aboutUsPhotoTitle}
+			/>
+			<HeroSection src={fluid} alt={title} />
 		</Layout>
 	);
 };
@@ -25,7 +42,19 @@ export const query = graphql`
 					}
 					title
 				}
-				heroImageText
+				aboutUsPhoto {
+					aboutUsPic: fluid {
+						...GatsbyContentfulFluid
+					}
+					aboutUsPhotoTitle: title
+				}
+				aboutUsTitle
+				aboutUsText {
+					aboutUsText
+				}
+				aboutUsService1
+				aboutUsService2
+				aboutUsService3
 			}
 		}
 	}

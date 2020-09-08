@@ -1,0 +1,52 @@
+.about-us {
+	background-color: black;
+	color: white;
+}
+
+.image-holder {
+	display: flex;
+	justify-content: space-around;
+}
+
+.services-holder {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro {
+	color: #f1803a;
+}
+
+.icon {
+	display: block;
+	font-size: 2.5rem;
+	text-align: center;
+	color: #f1803a;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.title {
+	margin: 1rem 0rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+	.image-holder {
+		display: none;
+	}
+
+	.about-us {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 70vh;
+	}
+}
