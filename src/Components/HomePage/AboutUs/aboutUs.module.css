@@ -10,7 +10,7 @@
 
 .services-holder {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .content {
@@ -42,11 +42,15 @@
 		display: none;
 	}
 
+	.image {
+		display: none;
+	}
+
 	.about-us {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		min-height: 70vh;
+		padding: 1rem 0rem;
 	}
 }

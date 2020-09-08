@@ -1,4 +1,7 @@
 @media only screen and (max-device-width: 576px) {
+	.p {
+		font-size: 1.4rem;
+	}
 }
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) {
 }
@@ -9,4 +12,7 @@
 }
 
 @media only screen and (min-device-width: 1300px) {
+	.p {
+		font-size: 1.2rem;
+	}
 }

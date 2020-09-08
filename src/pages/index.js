@@ -28,7 +28,6 @@ const Home = ({ data }) => {
 				src={aboutUsPic}
 				alt={aboutUsPhotoTitle}
 			/>
-			<HeroSection src={fluid} alt={title} />
 		</Layout>
 	);
 };

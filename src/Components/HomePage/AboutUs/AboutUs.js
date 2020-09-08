@@ -5,34 +5,33 @@ import styles from '../AboutUs/aboutUs.module.css';
 import { FaRegBuilding } from 'react-icons/fa';
 import { MdBuild } from 'react-icons/md';
 import { GiFireExtinguisher } from 'react-icons/gi';
+import BackgroundImage from 'gatsby-background-image';
+import globalstyles from '../../Global/global.module.css';
 
 const AboutUs = ({ src, alt, aboutUsService1, aboutUsService2, aboutUsService3, aboutUsTitle, aboutUsText }) => {
 	return (
 		<section>
 			<Row className={styles.aboutUs}>
-				<Col xs={6}>
-					<Row className={styles.imageHolder}>
-						<Col xs={9}>
-							<Img fluid={src} alt={alt} />
-						</Col>
-					</Row>
+				<Col xs={6} className={styles.image}>
+					<Img fluid={src} />
 				</Col>
-				<Col xs={12} md={5} className={styles.content}>
-					<p className={styles.intro}>WHO WE ARE</p>
+
+				<Col xs={12} md={6} lg={5} className={styles.content}>
+					<p className={`${styles.intro}`}>WHO WE ARE</p>
 					<h2 className={styles.title}>{aboutUsTitle}</h2>
-					<p>{aboutUsText}</p>
+					<p className={globalstyles.p}>{aboutUsText}</p>
 					<Row className={styles.servicesHolder}>
 						<Col xs={3}>
 							<FaRegBuilding className={styles.icon} />
-							{aboutUsService1}
+							<p className={globalstyles.p}>{aboutUsService1}</p>
 						</Col>
 						<Col xs={3}>
 							<MdBuild className={styles.icon} />
-							{aboutUsService2}
+							<p className={globalstyles.p}>{aboutUsService2}</p>
 						</Col>
 						<Col xs={3}>
 							<GiFireExtinguisher className={styles.icon} />
-							{aboutUsService3}
+							<p className={globalstyles.p}>{aboutUsService3}</p>
 						</Col>
 					</Row>
 				</Col>
