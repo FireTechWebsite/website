@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import styles from '../navbar/navbar.module.css';
+import styles from './navbar.module.css';
 import { Link, useStaticQuery } from 'gatsby';
 import { GiCancel, GiHamburgerMenu } from 'react-icons/gi';
-import Links from '../../constants/Links';
+import Links from '../../../constants/Links';
 import { v4 as uuidv4 } from 'uuid';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Row } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
@@ -33,8 +32,8 @@ const Navbar = ({ textColor }) => {
 	const [ active, setActive ] = useState(false);
 
 	return (
-		<header className={styles.navbar}>
-			<Col>
+		<Row>
+			<Col xs={12}>
 				<Row>
 					<Col xs={12}>
 						<Row className={styles.logoHolder}>
@@ -134,7 +133,7 @@ const Navbar = ({ textColor }) => {
 					</Col>
 				</Row>
 			</Col>
-		</header>
+		</Row>
 	);
 };
 

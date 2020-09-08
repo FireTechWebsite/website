@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../HeroSection/heroSection.module.css';
+import styles from './heroSection.module.css';
 import { Row, Col } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-background-image';
 
