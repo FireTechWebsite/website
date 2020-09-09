@@ -29,7 +29,7 @@ const Home = ({ data }) => {
 				src={aboutUsPic}
 				alt={aboutUsPhotoTitle}
 			/>
-			<Services />
+			<Services data={data} />
 		</Layout>
 	);
 };
@@ -56,6 +56,70 @@ export const query = graphql`
 				aboutUsService1
 				aboutUsService2
 				aboutUsService3
+				service1Image {
+					service1Image: fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				service1Slug
+				service1Subtitle
+				service1Title
+				service2Image {
+					service2Image: fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				service2Slug
+				service2Subtitle
+				service2Title
+				service3Image {
+					service3Image: fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				service3Slug
+				service3Subtitle
+				service3Title
+				service4Image {
+					service4Image: fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				service4Slug
+				service4Subtitle
+				service4Title
+				service5Image {
+					service5Image: fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				service5Slug
+				service5Subtitle
+				service5Title
+				service6Image {
+					service6Image: fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				service6Slug
+				service6Subtitle
+				service6Title
+				service7Image {
+					service7Image: fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				service7Slug
+				service7Subtitle
+				service7Title
+				service8Image {
+					service8Image: fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				service8Slug
+				service8Subtitle
+				service8Title
 			}
 		}
 	}

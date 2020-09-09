@@ -1,0 +1,22 @@
+.card {
+  border: 1px solid rgba(146, 146, 146, 0.418);
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgba(10, 10, 10, 0.575);
+}
+
+.link {
+  color: white;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.link:hover {
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+}
