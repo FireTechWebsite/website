@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import AboutUs from '../Components/HomePage/AboutUs/AboutUs';
 import Services from '../Components/HomePage/Services/Services';
 import Partners from '../Components/HomePage/Partners/Partners';
+import Testimonials from '../Components/HomePage/Testimonials/Testimonials';
 
 const Home = ({ data }) => {
 	console.log(data);
@@ -17,7 +18,8 @@ const Home = ({ data }) => {
 		aboutUsService3,
 		aboutUsTitle,
 		aboutUsText: { aboutUsText },
-		partners
+		partners,
+		testimonialHeaderImage
 	} = data.allContentfulHomepage.nodes[0];
 	return (
 		<Layout>
@@ -32,6 +34,7 @@ const Home = ({ data }) => {
 				alt={aboutUsPhotoTitle}
 			/>
 			<Services data={data} />
+			<Testimonials testimonialHeaderImage={testimonialHeaderImage} />
 			<Partners partners={partners} />
 		</Layout>
 	);
@@ -40,6 +43,12 @@ export const query = graphql`
 	{
 		allContentfulHomepage {
 			nodes {
+				testimonialHeaderImage {
+					fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+					title
+				}
 				heroImage {
 					fluid(maxWidth: 2000, quality: 100) {
 						...GatsbyContentfulFluid
