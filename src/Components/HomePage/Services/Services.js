@@ -8,8 +8,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 const Services = ({ data }) => {
-	console.log(data);
-
 	const {
 		service1Image: { service1Image },
 		service1Slug,

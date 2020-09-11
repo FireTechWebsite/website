@@ -4,6 +4,7 @@ import HeroSection from '../Components/HomePage/HeroSection/HeroSection';
 import { graphql } from 'gatsby';
 import AboutUs from '../Components/HomePage/AboutUs/AboutUs';
 import Services from '../Components/HomePage/Services/Services';
+import Partners from '../Components/HomePage/Partners/Partners';
 
 const Home = ({ data }) => {
 	console.log(data);
@@ -15,7 +16,8 @@ const Home = ({ data }) => {
 		aboutUsService2,
 		aboutUsService3,
 		aboutUsTitle,
-		aboutUsText: { aboutUsText }
+		aboutUsText: { aboutUsText },
+		partners
 	} = data.allContentfulHomepage.nodes[0];
 	return (
 		<Layout>
@@ -30,6 +32,7 @@ const Home = ({ data }) => {
 				alt={aboutUsPhotoTitle}
 			/>
 			<Services data={data} />
+			<Partners partners={partners} />
 		</Layout>
 	);
 };
@@ -120,6 +123,12 @@ export const query = graphql`
 				service8Slug
 				service8Subtitle
 				service8Title
+				partners {
+					fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+					title
+				}
 			}
 		}
 	}
