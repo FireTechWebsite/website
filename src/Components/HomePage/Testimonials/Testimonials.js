@@ -7,8 +7,8 @@ const Testimonials = ({ testimonialHeaderImage }) => {
 	console.log(testimonialHeaderImage);
 	return (
 		<Row className={styles.testimonials}>
-			<Col xs={12} md={6} className={styles.image}>
-				<Img fluid={testimonialHeaderImage.fluid} />
+			<Col xs={12} sm={6} className={styles.image}>
+				<Img fluid={testimonialHeaderImage.fluid} alt={testimonialHeaderImage.fluid.title} />
 			</Col>
 		</Row>
 	);
