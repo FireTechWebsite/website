@@ -1,5 +1,9 @@
 .row {
-	display: flex;
-	justify-content: center;
-	margin: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.slider {
+  margin-bottom: 2rem;
 }

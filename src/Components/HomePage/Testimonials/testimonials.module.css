@@ -1,7 +1,41 @@
 .image {
-  padding: 2rem;
+  padding: 0rem;
 }
 
+.content-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .testimonials {
   background-color: black;
+  padding: 1rem 0rem;
+}
+
+.review {
+  color: white;
+  text-align: center;
+}
+
+.reviewContent {
+  font-size: 1.5rem;
+}
+
+.star {
+  color: gold;
+}
+
+.review-name {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  margin: 0rem;
+}
+
+.cirlce-holder {
+  text-align: center;
+}
+
+.circle {
+  color: rgb(207, 207, 207);
+  margin: 0rem 0.5rem;
 }

@@ -46,9 +46,11 @@ const Services = ({ data }) => {
 	let settings = {
 		dots: true,
 		infinite: true,
-		speed: 500,
+		speed: 1000,
 		slidesToShow: 4,
 		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -81,12 +83,14 @@ const Services = ({ data }) => {
 		<section>
 			<Row className={styles.row}>
 				<TitleText
+					xs="12"
+					md="8"
 					title="WHAT WE DO"
 					subtitle="WHAT DOES FIRETECH ASPIRE TO ACHIEVE EVERYDAY?"
 					content="We are hard at work keeping up with the rapidly changing business landscape of Sri Lanka. Firetech is geared to meet the challenges of your rapidly evolving business needs by providing uncompromising fire safety."
 				/>
 				<Col xs={12}>
-					<Slider {...settings}>
+					<Slider {...settings} className={styles.slider}>
 						<ServicesCard
 							slug={service1Slug}
 							subtitle={service1Subtitle}

@@ -8,6 +8,8 @@ const Partners = ({ partners }) => {
 		<section>
 			<Row>
 				<TitleText
+					xs="12"
+					md="8"
 					title="OUR PARTNERS"
 					subtitle="WE PARTNER WITH THE WORLD'S BEST TO PROTECT YOU AND YOUR ASSETS"
 					content="Carefully chosen for their proven expertise in fire safety, our partnerships provide us with the ability to provide best-in-class fire safety engineering to you, your loved ones and assets"

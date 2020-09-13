@@ -19,8 +19,11 @@ const Home = ({ data }) => {
 		aboutUsTitle,
 		aboutUsText: { aboutUsText },
 		partners,
-		testimonialHeaderImage
+		testimonialHeaderImage,
+		reviews: { Review },
+		pastProjects
 	} = data.allContentfulHomepage.nodes[0];
+
 	return (
 		<Layout>
 			<HeroSection src={fluid} alt={title} />
@@ -34,7 +37,11 @@ const Home = ({ data }) => {
 				alt={aboutUsPhotoTitle}
 			/>
 			<Services data={data} />
-			<Testimonials testimonialHeaderImage={testimonialHeaderImage} />
+			<Testimonials
+				testimonialHeaderImage={testimonialHeaderImage}
+				reviews={Review}
+				pastProjects={pastProjects}
+			/>
 			<Partners partners={partners} />
 		</Layout>
 	);
@@ -43,6 +50,19 @@ export const query = graphql`
 	{
 		allContentfulHomepage {
 			nodes {
+				pastProjects {
+					fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+					title
+				}
+				reviews {
+					Review {
+						name
+						review
+						title
+					}
+				}
 				testimonialHeaderImage {
 					fluid(maxWidth: 2000, quality: 100) {
 						...GatsbyContentfulFluid

@@ -1,0 +1,33 @@
+.card {
+  height: 40vh;
+  background-color: rgba(10, 10, 10, 0.575);
+  transition: background-color 0.6s;
+}
+
+.card:hover {
+  background-color: #f1803a;
+}
+
+.card-content {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: white;
+}
+
+.arrow-holder {
+  display: flex;
+  justify-content: center;
+}
