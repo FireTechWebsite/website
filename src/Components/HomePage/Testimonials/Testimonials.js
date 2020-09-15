@@ -11,8 +11,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
-	console.log(pastProjects);
-
 	const [ currentReviewNum, setcurrentReviewNum ] = useState(0);
 
 	const changeReview = () => {

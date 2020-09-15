@@ -1,3 +1,69 @@
 .footer {
   background-color: black;
+  color: white;
+}
+
+.logo {
+  color: #f1803a;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.content-1 {
+  text-align: center;
+  border: 0.05rem solid rgb(182, 182, 182);
+}
+.content-2-holder {
+  margin-top: 2rem;
+}
+
+.link-holder {
+  list-style: none;
+}
+
+.link {
+  color: white;
+  text-transform: capitalize;
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: #f1803a;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0rem;
+}
+
+.content-holder {
+  text-align: center;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.credit {
+  text-align: center;
+  background-color: #f1803a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.credit p {
+  margin: 0;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .content-holder,
+  .content-1 {
+    text-align: left;
+  }
+
+  .logo {
+    margin-left: 0.1rem;
+  }
 }

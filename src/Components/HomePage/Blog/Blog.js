@@ -5,7 +5,7 @@ import ServicesCard from '../ServicesCard/ServicesCard';
 
 const Blog = ({ data }) => {
 	return (
-		<section>
+		<section style={{ margin: '1rem 0rem' }}>
 			<Row>
 				<TitleText
 					xs="12"
