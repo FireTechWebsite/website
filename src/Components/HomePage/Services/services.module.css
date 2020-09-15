@@ -1,7 +1,7 @@
 .row {
   display: flex;
   justify-content: center;
-  margin: 1rem 0rem;
+  background-color: #000000;
 }
 
 .slider {

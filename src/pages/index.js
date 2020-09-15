@@ -6,6 +6,7 @@ import AboutUs from '../Components/HomePage/AboutUs/AboutUs';
 import Services from '../Components/HomePage/Services/Services';
 import Partners from '../Components/HomePage/Partners/Partners';
 import Testimonials from '../Components/HomePage/Testimonials/Testimonials';
+import Blog from '../Components/HomePage/Blog/Blog';
 
 const Home = ({ data }) => {
 	console.log(data);
@@ -36,13 +37,15 @@ const Home = ({ data }) => {
 				src={aboutUsPic}
 				alt={aboutUsPhotoTitle}
 			/>
+			<Partners partners={partners} />
 			<Services data={data} />
 			<Testimonials
 				testimonialHeaderImage={testimonialHeaderImage}
 				reviews={Review}
 				pastProjects={pastProjects}
 			/>
-			<Partners partners={partners} />
+
+			<Blog data={data.allContentfulBlogPosts} />
 		</Layout>
 	);
 };
@@ -157,6 +160,19 @@ export const query = graphql`
 						...GatsbyContentfulFluid
 					}
 					title
+				}
+			}
+		}
+		allContentfulBlogPosts(limit: 4, sort: { fields: publishedData, order: DESC }) {
+			nodes {
+				title
+				image {
+					fluid(maxWidth: 2000, quality: 100) {
+						...GatsbyContentfulFluid
+					}
+				}
+				description {
+					description
 				}
 			}
 		}

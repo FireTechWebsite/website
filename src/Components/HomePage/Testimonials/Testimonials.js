@@ -64,16 +64,15 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 
 	return (
 		<Row className={styles.testimonials}>
-			<Col xs={12} md={6} className={styles.image}>
+			<Col xs={12} md={5} className={styles.image}>
 				<Img fluid={testimonialHeaderImage.fluid} alt={testimonialHeaderImage.fluid.title} />
 			</Col>
-			<Col xs={12} md={6} className={styles.contentHolder}>
+			<Col xs={12} md={5} className={styles.contentHolder}>
 				<Row>
 					<TitleText
 						title="TESTIMONIALS"
 						subtitle="WHAT OUR CLIENTS SAY ABOUT US"
 						content="We work very hard at making our name synonymous with quality and this is why our clients trust us"
-						color="white"
 						xs="12"
 						md="8"
 					/>
@@ -93,7 +92,7 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 					</Col>
 				</Row>
 			</Col>
-			<Col sm={12}>
+			<Col sm={12} className={styles.sliderHolder}>
 				<Slider {...settings} className={styles.slider}>
 					{pastProjects.map((project) => <ProjectCard src={project.fluid} content={project.title} />)}
 				</Slider>

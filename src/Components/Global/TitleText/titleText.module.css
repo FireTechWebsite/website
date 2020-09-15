@@ -1,17 +1,23 @@
 .title-text {
-	text-align: center;
-	margin: 1rem 0rem;
+  text-align: center;
+  margin: 1rem 0rem;
 }
 
 p {
-	margin: 0rem;
+  margin: 0rem;
 }
 
 .title {
-	color: #f1803a;
+  color: #f1803a;
 }
 
 .content-holder {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .title-text {
+    text-align: left;
+  }
 }

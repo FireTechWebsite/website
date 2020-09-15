@@ -7,17 +7,19 @@ import { AiOutlinePlus } from 'react-icons/ai';
 
 const ServicesCard = ({ slug, subtitle, title, src }) => {
 	return (
-		<BackgroundImage fluid={src} style={{ width: '100%', margin: '1rem 1rem' }}>
-			<article className={styles.card}>
-				<Col xs={12}>
-					<h3>{title}</h3>
-					<p>{subtitle}</p>
-					<Link to={slug} className={styles.link}>
-						READ MORE <AiOutlinePlus />
-					</Link>
-				</Col>
-			</article>
-		</BackgroundImage>
+		<Col>
+			<Link to={slug} className={styles.link}>
+				<BackgroundImage fluid={src} style={{ width: '100%', margin: '1rem 1rem' }}>
+					<article className={styles.card}>
+						<Col xs={12}>
+							<h3>{title}</h3>
+							<p>{subtitle}</p>
+							READ MORE <AiOutlinePlus />
+						</Col>
+					</article>
+				</BackgroundImage>
+			</Link>
+		</Col>
 	);
 };
 

@@ -45,6 +45,7 @@ const Services = ({ data }) => {
 
 	let settings = {
 		dots: true,
+		arrows: false,
 		infinite: true,
 		speed: 1000,
 		slidesToShow: 4,
@@ -85,6 +86,7 @@ const Services = ({ data }) => {
 				<TitleText
 					xs="12"
 					md="8"
+					color="white"
 					title="WHAT WE DO"
 					subtitle="WHAT DOES FIRETECH ASPIRE TO ACHIEVE EVERYDAY?"
 					content="We are hard at work keeping up with the rapidly changing business landscape of Sri Lanka. Firetech is geared to meet the challenges of your rapidly evolving business needs by providing uncompromising fire safety."

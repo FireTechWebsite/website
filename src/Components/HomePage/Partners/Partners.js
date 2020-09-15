@@ -5,7 +5,7 @@ import TitleText from '../../Global/TitleText/TitleText';
 
 const Partners = ({ partners }) => {
 	return (
-		<section>
+		<section style={{ margin: '2rem 0rem' }}>
 			<Row>
 				<TitleText
 					xs="12"
