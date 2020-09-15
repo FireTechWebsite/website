@@ -6,7 +6,7 @@ import { AiFillPhone } from 'react-icons/ai';
 import { RiMapPinFill } from 'react-icons/ri';
 import { MdEmail } from 'react-icons/md';
 import Links from '../../../constants/Links';
-import { FaBeer } from 'react-icons/fa';
+import { FiArrowUpCircle } from 'react-icons/fi';
 
 const query = graphql`
 	query {
@@ -91,13 +91,13 @@ const Footer = () => {
 			<Col xs={12} className={styles.credit}>
 				<Row>
 					<Col xs={12} md={4}>
-						<p>Developed by KishoKanth</p>
+						<p>Developed by Kishokanth</p>
 					</Col>
 					<Col xs={12} md={4}>
 						<p>Copyrighted by Firetech Pvt Ltd</p>
 					</Col>
 					<Col xs={12} md={4}>
-						<p>Developed by KishoKanth</p>
+						Go tp the top <FiArrowUpCircle className={styles.arrow} />
 					</Col>
 				</Row>
 			</Col>

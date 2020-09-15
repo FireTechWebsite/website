@@ -9,9 +9,15 @@
   margin: 1rem;
 }
 
+.arrow {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0rem;
+}
+
 .content-1 {
   text-align: center;
-  border: 0.05rem solid rgb(182, 182, 182);
+  border-bottom: 0.05rem solid rgb(182, 182, 182);
 }
 .content-2-holder {
   margin-top: 2rem;
@@ -47,7 +53,6 @@ ul {
 .credit {
   text-align: center;
   background-color: #f1803a;
-
   padding: 0.5rem;
 }
 
@@ -57,7 +62,8 @@ ul {
 
 @media only screen and (max-device-width: 768px) {
   .content-holder,
-  .content-1 {
+  .content-1,
+  .credit {
     text-align: left;
   }
 

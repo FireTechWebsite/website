@@ -39,7 +39,7 @@ const Navbar = ({ textColor }) => {
 						<Col xs={12}>
 							<Row className={styles.logoHolder}>
 								<Col xs={4} md={2} lg={1} className={styles.logo}>
-									<Img fluid={fluid} alt={title} />
+									<Img fluid={fluid} alt={title} className={styles.img} />
 								</Col>
 								<Col xs={8}>
 									<Row>
