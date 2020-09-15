@@ -6,6 +6,7 @@ import { AiFillPhone } from 'react-icons/ai';
 import { RiMapPinFill } from 'react-icons/ri';
 import { MdEmail } from 'react-icons/md';
 import Links from '../../../constants/Links';
+import { FaBeer } from 'react-icons/fa';
 
 const query = graphql`
 	query {
@@ -88,7 +89,17 @@ const Footer = () => {
 				</Row>
 			</Col>
 			<Col xs={12} className={styles.credit}>
-				<p>Developed by KishoKanth</p>
+				<Row>
+					<Col xs={12} md={4}>
+						<p>Developed by KishoKanth</p>
+					</Col>
+					<Col xs={12} md={4}>
+						<p>Copyrighted by Firetech Pvt Ltd</p>
+					</Col>
+					<Col xs={12} md={4}>
+						<p>Developed by KishoKanth</p>
+					</Col>
+				</Row>
 			</Col>
 		</Row>
 	);
