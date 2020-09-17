@@ -7,42 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-const Services = ({ data }) => {
-	const {
-		service1Image: { service1Image },
-		service1Slug,
-		service1Subtitle,
-		service1Title,
-		service2Image: { service2Image },
-		service2Slug,
-		service2Subtitle,
-		service2Title,
-		service3Image: { service3Image },
-		service3Slug,
-		service3Subtitle,
-		service3Title,
-		service4Image: { service4Image },
-		service4Slug,
-		service4Subtitle,
-		service4Title,
-		service5Image: { service5Image },
-		service5Slug,
-		service5Subtitle,
-		service5Title,
-		service6Image: { service6Image },
-		service6Slug,
-		service6Subtitle,
-		service6Title,
-		service7Image: { service7Image },
-		service7Slug,
-		service7Subtitle,
-		service7Title,
-		service8Image: { service8Image },
-		service8Slug,
-		service8Subtitle,
-		service8Title
-	} = data.allContentfulHomepage.nodes[0];
-
+const Services = ({ servicesTypes }) => {
 	let settings = {
 		dots: true,
 		arrows: false,
@@ -50,8 +15,7 @@ const Services = ({ data }) => {
 		speed: 1000,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
+
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -93,55 +57,14 @@ const Services = ({ data }) => {
 				/>
 				<Col xs={12}>
 					<Slider {...settings} className={styles.slider}>
-						<ServicesCard
-							slug={service1Slug}
-							subtitle={service1Subtitle}
-							title={service1Title}
-							src={service1Image}
-						/>
-						<ServicesCard
-							slug={service2Slug}
-							subtitle={service2Subtitle}
-							title={service2Title}
-							src={service2Image}
-						/>
-						<ServicesCard
-							slug={service3Slug}
-							subtitle={service3Subtitle}
-							title={service3Title}
-							src={service3Image}
-						/>
-						<ServicesCard
-							slug={service4Slug}
-							subtitle={service4Subtitle}
-							title={service4Title}
-							src={service4Image}
-						/>
-
-						<ServicesCard
-							slug={service5Slug}
-							subtitle={service5Subtitle}
-							title={service5Title}
-							src={service5Image}
-						/>
-						<ServicesCard
-							slug={service6Slug}
-							subtitle={service6Subtitle}
-							title={service6Title}
-							src={service6Image}
-						/>
-						<ServicesCard
-							slug={service7Slug}
-							subtitle={service7Subtitle}
-							title={service7Title}
-							src={service7Image}
-						/>
-						<ServicesCard
-							slug={service8Slug}
-							subtitle={service8Subtitle}
-							title={service8Title}
-							src={service8Image}
-						/>
+						{servicesTypes.map((service) => (
+							<ServicesCard
+								fileName={service.file.fileName}
+								subtitle={service.description}
+								title={service.title}
+								src={service.fluid}
+							/>
+						))}
 					</Slider>
 				</Col>
 			</Row>

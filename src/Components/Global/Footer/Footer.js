@@ -64,7 +64,9 @@ const Footer = () => {
 						<ul>
 							{data.allContentfulBlogPosts.nodes.map((post) => (
 								<li className={styles.linkHolder}>
-									<Link className={styles.link}>{post.title}</Link>
+									<Link className={styles.link} to="ff">
+										{post.title}
+									</Link>
 								</li>
 							))}
 						</ul>
@@ -73,16 +75,24 @@ const Footer = () => {
 						<p className={styles.title}>OUR CORE SERVICES</p>
 						<ul>
 							<li className={styles.linkHolder}>
-								<Link className={styles.link}>Alarm Systems</Link>
+								<Link className={styles.link} to="f">
+									Alarm Systems
+								</Link>
 							</li>
 							<li className={styles.linkHolder}>
-								<Link className={styles.link}>Clean Agent Suppression System</Link>
+								<Link className={styles.link} to="ff">
+									Clean Agent Suppression System
+								</Link>
 							</li>
 							<li className={styles.linkHolder}>
-								<Link className={styles.link}>Hydrant/Hose Reel Sprinkler System</Link>
+								<Link className={styles.link} to="ff">
+									Hydrant/Hose Reel Sprinkler System
+								</Link>
 							</li>
 							<li className={styles.linkHolder}>
-								<Link className={styles.link}>Wet Chemical Kitchen Hood Suppression </Link>
+								<Link className={styles.link} to="ff">
+									Wet Chemical Kitchen Hood Suppression{' '}
+								</Link>
 							</li>
 						</ul>
 					</Col>
