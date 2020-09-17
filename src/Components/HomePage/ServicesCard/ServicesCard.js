@@ -18,7 +18,7 @@ const ServicesCard = ({ fileName, subtitle, title, src }) => {
 				<BackgroundImage fluid={src} style={{ width: '100%', margin: '1rem 1rem' }}>
 					<article className={styles.card}>
 						<Col xs={12}>
-							<h3>{handleTitle(fileName)}</h3>
+							<h3>{fileName ? handleTitle(fileName) : title}</h3>
 							<p>{subtitle}</p>
 							READ MORE <AiOutlinePlus />
 						</Col>

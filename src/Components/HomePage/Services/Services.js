@@ -6,6 +6,7 @@ import styles from '../Services/services.module.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import { BsArrowRight } from 'react-icons/bs';
 
 const Services = ({ servicesTypes }) => {
 	let settings = {
@@ -15,7 +16,6 @@ const Services = ({ servicesTypes }) => {
 		speed: 1000,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -66,6 +66,9 @@ const Services = ({ servicesTypes }) => {
 							/>
 						))}
 					</Slider>
+				</Col>
+				<Col xs={12} className={styles.swipe}>
+					SWIPER FOR MORE <BsArrowRight />
 				</Col>
 			</Row>
 		</section>
