@@ -5,5 +5,5 @@ export default [
 	{ path: '/brand', text: 'About Us' },
 	{ path: '/portfolio', text: 'Services' },
 	{ path: '/editorials', text: 'Testimonials' },
-	{ path: '/contact', text: 'Blog' }
+	{ path: '/blog', text: 'Blog' }
 ];

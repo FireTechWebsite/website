@@ -17,9 +17,9 @@ const Blog = ({ data }) => {
 				{data.nodes.map((post) => (
 					<Col xs={11} sm={6} lg={3}>
 						<ServicesCard
-							slug="fff"
+							title={`blog/${post.slug}`}
 							subtitle={post.description.description}
-							title={post.title}
+							fileName={post.title}
 							src={post.image.fluid}
 						/>
 					</Col>
