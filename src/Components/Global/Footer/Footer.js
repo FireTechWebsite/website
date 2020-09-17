@@ -14,6 +14,7 @@ const query = graphql`
 		allContentfulBlogPosts(limit: 4, sort: { fields: publishedData, order: DESC }) {
 			nodes {
 				title
+				slug
 			}
 		}
 	}
@@ -65,7 +66,7 @@ const Footer = () => {
 						<ul>
 							{data.allContentfulBlogPosts.nodes.map((post) => (
 								<li className={styles.linkHolder}>
-									<Link className={styles.link} to="ff">
+									<Link className={styles.link} to={`blog/${post.slug}`}>
 										{post.title}
 									</Link>
 								</li>
