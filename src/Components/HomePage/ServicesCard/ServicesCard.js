@@ -19,7 +19,7 @@ const ServicesCard = ({ fileName, subtitle, title, src }) => {
 					<article className={styles.card}>
 						<Col xs={12}>
 							<h3>{fileName ? handleTitle(fileName) : title}</h3>
-							<p>{subtitle}</p>
+							<p className={styles.subtitle}>{subtitle}</p>
 							READ MORE <AiOutlinePlus />
 						</Col>
 					</article>
