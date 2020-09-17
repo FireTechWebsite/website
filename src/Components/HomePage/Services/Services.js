@@ -11,7 +11,7 @@ import { BsArrowRight } from 'react-icons/bs';
 const Services = ({ servicesTypes }) => {
 	let settings = {
 		dots: true,
-		arrows: false,
+		arrows: true,
 		infinite: true,
 		speed: 1000,
 		slidesToShow: 4,
@@ -55,7 +55,7 @@ const Services = ({ servicesTypes }) => {
 					subtitle="WHAT DOES FIRETECH ASPIRE TO ACHIEVE EVERYDAY?"
 					content="We are hard at work keeping up with the rapidly changing business landscape of Sri Lanka. Firetech is geared to meet the challenges of your rapidly evolving business needs by providing uncompromising fire safety."
 				/>
-				<Col xs={12}>
+				<Col xs={12} className={styles.sliderHolder}>
 					<Slider {...settings} className={styles.slider}>
 						{servicesTypes.map((service) => (
 							<ServicesCard
