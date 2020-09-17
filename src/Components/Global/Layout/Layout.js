@@ -9,7 +9,7 @@ export default function Layout({ children }) {
 	return (
 		<Container fluid className={styles.container}>
 			<NavigationBar />
-			<main>{children}</main>
+			<main id="navbar">{children}</main>
 			<Footer />
 		</Container>
 	);

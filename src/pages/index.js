@@ -9,8 +9,6 @@ import Testimonials from '../Components/HomePage/Testimonials/Testimonials';
 import Blog from '../Components/HomePage/Blog/Blog';
 
 const Home = ({ data }) => {
-	console.log(data);
-
 	const {
 		heroImage: { fluid, title },
 		aboutUsPhoto: { aboutUsPic, aboutUsPhotoTitle },

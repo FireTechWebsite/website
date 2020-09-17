@@ -14,6 +14,7 @@ module.exports = {
 				// Learn about environment variables: https://gatsby.dev/env-vars
 				accessToken: `oJSsPwHuXPJp_1VVvr0Yd6kLiGUvrtVQE3x93xclEE8`
 			}
-		}
+		},
+		`gatsby-plugin-smoothscroll`
 	]
 };

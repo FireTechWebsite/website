@@ -7,6 +7,7 @@ import { RiMapPinFill } from 'react-icons/ri';
 import { MdEmail } from 'react-icons/md';
 import Links from '../../../constants/Links';
 import { FiArrowUpCircle } from 'react-icons/fi';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const query = graphql`
 	query {
@@ -98,16 +99,16 @@ const Footer = () => {
 					</Col>
 				</Row>
 			</Col>
-			<Col xs={12} className={styles.credit}>
-				<Row>
+			<Col xs={12}>
+				<Row className={styles.credit}>
 					<Col xs={12} md={4}>
 						<p>Developed by Kishokanth</p>
 					</Col>
 					<Col xs={12} md={4}>
 						<p>Copyrighted by Firetech Pvt Ltd</p>
 					</Col>
-					<Col xs={12} md={4}>
-						Go tp the top <FiArrowUpCircle className={styles.arrow} />
+					<Col xs={12} md={4} onClick={() => scrollTo('#navbar')}>
+						Go to the top <FiArrowUpCircle className={styles.arrow} />
 					</Col>
 				</Row>
 			</Col>
