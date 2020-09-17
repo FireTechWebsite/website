@@ -70,10 +70,8 @@ const Navbar = ({ textColor }) => {
 													<Link
 														duration={1}
 														className={styles.fullscreenNavLink}
-														swipe
-														top="entry"
 														to={link.path}
-														style={{ color: `${textColor}` }}
+														activeStyle={{ color: 'black' }}
 													>
 														{link.text}
 													</Link>
