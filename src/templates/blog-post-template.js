@@ -10,9 +10,6 @@ import Img from 'gatsby-image';
 
 const website_url = 'https://firetech-staging.netlify.app/';
 
-const Bold = ({ children }) => <strong className={styles.bold}>{children}</strong>;
-const Text = ({ children }) => <p className={styles.p}>{children}</p>;
-
 const BlogPostTemplate = ({ data }) => {
 	const {
 		image: { fluid, title },
@@ -24,10 +21,10 @@ const BlogPostTemplate = ({ data }) => {
 
 	const options = {
 		renderMark: {
-			[MARKS.BOLD]: (text) => <Bold>{text}</Bold>
+			[MARKS.BOLD]: (text) => <strong>{text}</strong>
 		},
 		renderNode: {
-			[BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+			[BLOCKS.PARAGRAPH]: (node, children) => <p className={styles.p}>{children}</p>,
 			'embedded-asset-block': (node) => {
 				return (
 					<img
