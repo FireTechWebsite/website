@@ -2,8 +2,7 @@
 
 export default [
 	{ path: '/', text: 'Home' },
-	{ path: '/brand', text: 'About Us' },
-	{ path: '/portfolio', text: 'Services' },
-	{ path: '/editorials', text: 'Testimonials' },
+	{ path: '/about', text: 'About us' },
+	{ path: '/services', text: 'Services' },
 	{ path: '/blog', text: 'Blog' }
 ];

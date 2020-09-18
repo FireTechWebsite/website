@@ -61,7 +61,7 @@ const Services = ({ servicesTypes }) => {
 							<ServicesCard
 								fileName={service.file.fileName}
 								subtitle={service.description}
-								title={service.title}
+								title={`services/${service.title}`}
 								src={service.fluid}
 							/>
 						))}
