@@ -75,7 +75,7 @@ const ServicePage = ({ data }) => {
 							<h2 className={styles.heading3}>Our Partners</h2>
 							<Row className={styles.partnerLogos}>
 								{partnerLogos.map((logo) => (
-									<Col xs={4} md={4}>
+									<Col xs={4}>
 										<Img fluid={logo.fluid} alt={logo.title} />
 									</Col>
 								))}
