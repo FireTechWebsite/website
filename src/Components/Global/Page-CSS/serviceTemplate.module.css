@@ -1,0 +1,63 @@
+.service {
+  padding: 2rem 0rem;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-holder,
+.image {
+  padding: 0rem;
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.heading-2,
+.heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.brochure {
+  margin-top: 2rem;
+}
+
+.brochure-text {
+  color: black;
+  transition: font-size 0.4s;
+}
+
+.brochure-text:hover {
+  font-size: 1.05rem;
+  color: black;
+  text-decoration: none;
+}
+
+.heading-3 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .image-holder,
+  .image {
+    padding: 1rem;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .text-box {
+    order: 2;
+  }
+}
+
+@media only screen and (min-device-width: 769px) {
+  .heading-2 {
+    display: none;
+  }
+}

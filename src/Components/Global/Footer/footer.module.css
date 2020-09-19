@@ -1,6 +1,8 @@
 .footer {
   background-color: black;
   color: white;
+  margin-top: auto;
+  display: flex;
 }
 
 .logo {
@@ -44,6 +46,7 @@ ul {
 
 .content-holder {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .title {
