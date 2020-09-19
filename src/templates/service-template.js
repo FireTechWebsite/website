@@ -40,7 +40,7 @@ const ServicePage = ({ data }) => {
 						<Col xs={11} md={8}>
 							<h1 className={styles.heading}>{nameOfService}</h1>
 						</Col>
-						<Col xs={11} md={8}>
+						<Col xs={12} md={8}>
 							{Features.map((feature) => (
 								<Accordion>
 									<Card>
@@ -54,7 +54,7 @@ const ServicePage = ({ data }) => {
 								</Accordion>
 							))}
 						</Col>
-						<Col xs={11} md={8} className={styles.brochure}>
+						<Col xs={12} md={8} className={styles.brochure}>
 							<Accordion>
 								<Card>
 									<a
@@ -73,7 +73,7 @@ const ServicePage = ({ data }) => {
 						</Col>
 						<Col xs={11} md={8}>
 							<h2 className={styles.heading3}>Our Partners</h2>
-							<Row>
+							<Row className={styles.partnerLogos}>
 								{partnerLogos.map((logo) => (
 									<Col xs={4} md={4}>
 										<Img fluid={logo.fluid} alt={logo.title} />
