@@ -69,14 +69,18 @@ const ServicePage = ({ data }) => {
 							</Accordion>
 						</Col>
 						<Col xs={11} md={8}>
-							<h2 className={styles.heading3}>Our Partners</h2>
-							<Row className={styles.partnerLogos}>
-								{partnerLogos.map((logo) => (
-									<Col xs={4}>
-										<Img fluid={logo.fluid} alt={logo.title} />
+							{partnerLogos ? (
+								<Row className={styles.partnerLogos}>
+									<Col xs={12}>
+										<h2 className={styles.heading3}>Our Partners</h2>
 									</Col>
-								))}
-							</Row>
+									{partnerLogos.map((logo) => (
+										<Col xs={4}>
+											<Img fluid={logo.fluid} alt={logo.title} />
+										</Col>
+									))}
+								</Row>
+							) : null}
 						</Col>
 					</Row>
 				</Col>
