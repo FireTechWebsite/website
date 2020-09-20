@@ -2,7 +2,7 @@ import React from 'react';
 import TitleText from '../../Global/TitleText/TitleText';
 import { Row, Col } from 'react-bootstrap';
 import ServicesCard from '../ServicesCard/ServicesCard';
-import styles from '../Services/services.module.css';
+import styles from './servicesSection.module.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';

@@ -80,7 +80,11 @@ const Navbar = ({ textColor }) => {
 										</ul>
 									</nav>
 								</Col>
-								<Col sm={2} className={styles.fullscreenNavContactLink}>
+								<Col
+									sm={2}
+									className={styles.fullscreenNavContactLink}
+									onClick={() => scrollTo('#contact')}
+								>
 									Contact Us <BsArrowRight className={styles.arrow} />
 								</Col>
 							</Row>

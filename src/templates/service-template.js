@@ -5,11 +5,8 @@ import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Slider from 'react-slick';
 import styles from '../Components/Global/Page-CSS/serviceTemplate.module.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { BsArrowRight } from 'react-icons/bs';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import { FiLogOut } from 'react-icons/fi';
 
 const ServicePage = ({ data }) => {
 	const {

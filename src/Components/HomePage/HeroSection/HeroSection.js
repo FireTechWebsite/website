@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './heroSection.module.css';
 import { Row, Col } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-background-image';
+import { Link } from 'gatsby';
 
 const HeroSection = ({ src }) => {
 	return (
@@ -17,8 +18,12 @@ const HeroSection = ({ src }) => {
 								</h1>
 							</Col>
 							<Col xs={12}>
-								<button className={styles.btn1}>READ MORE</button>
-								<button className={styles.btn2}>CONTACT</button>
+								<Link to="services" className={styles.btn1}>
+									OUR SERVICES
+								</Link>
+								<Link className={styles.btn2} to="about">
+									ABOUT US
+								</Link>
 							</Col>
 						</Row>
 					</Col>

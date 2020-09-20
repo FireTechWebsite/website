@@ -3,7 +3,7 @@ import Layout from '../Components/Global/Layout/Layout';
 import HeroSection from '../Components/HomePage/HeroSection/HeroSection';
 import { graphql } from 'gatsby';
 import AboutUs from '../Components/HomePage/AboutUs/AboutUs';
-import Services from '../Components/HomePage/Services/Services';
+import ServicesSection from '../Components/HomePage/ServicesSection/ServicesSection';
 import Partners from '../Components/HomePage/Partners/Partners';
 import Testimonials from '../Components/HomePage/Testimonials/Testimonials';
 import Blog from '../Components/HomePage/Blog/Blog';
@@ -37,7 +37,7 @@ const Home = ({ data }) => {
 				alt={aboutUsPhotoTitle}
 			/>
 			<Partners partners={partners} />
-			<Services data={data} servicesTypes={servicesTypes} />
+			<ServicesSection data={data} servicesTypes={servicesTypes} />
 			<Testimonials
 				testimonialHeaderImage={testimonialHeaderImage}
 				reviews={Review}

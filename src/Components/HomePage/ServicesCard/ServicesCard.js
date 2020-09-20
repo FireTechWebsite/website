@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import { AiOutlinePlus } from 'react-icons/ai';
 
-const ServicesCard = ({ fileName, subtitle, title, src }) => {
+const ServicesCard = ({ fileName, subtitle, title, src, xs, sm, md }) => {
 	const handleTitle = (x) => {
 		if (x) {
 			let item = x.replace('.jpg', '');
@@ -13,9 +13,9 @@ const ServicesCard = ({ fileName, subtitle, title, src }) => {
 		}
 	};
 	return (
-		<Col>
-			<Link to={title} className={styles.link}>
-				<BackgroundImage fluid={src} style={{ width: '100%', margin: '1rem 1rem' }}>
+		<Col xs={xs} sm={sm} md={md} style={{ margin: '1rem 0rem' }}>
+			<BackgroundImage fluid={src} style={{ width: '100%' }}>
+				<Link to={title} className={styles.link}>
 					<article className={styles.card}>
 						<Col xs={12}>
 							<h3>{fileName ? handleTitle(fileName) : title}</h3>
@@ -23,8 +23,8 @@ const ServicesCard = ({ fileName, subtitle, title, src }) => {
 							READ MORE <AiOutlinePlus />
 						</Col>
 					</article>
-				</BackgroundImage>
-			</Link>
+				</Link>
+			</BackgroundImage>
 		</Col>
 	);
 };

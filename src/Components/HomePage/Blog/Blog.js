@@ -15,14 +15,12 @@ const Blog = ({ data }) => {
 					content="We believe in educating our clients on fire hazards and safety in order to prepare them for when the worst strikes"
 				/>
 				{data.nodes.map((post) => (
-					<Col xs={11} sm={6} lg={3}>
-						<ServicesCard
-							title={`blog/${post.slug}`}
-							subtitle={post.description.description}
-							fileName={post.title}
-							src={post.image.fluid}
-						/>
-					</Col>
+					<ServicesCard
+						title={`blog/${post.slug}`}
+						subtitle={post.description.description}
+						fileName={post.title}
+						src={post.image.fluid}
+					/>
 				))}
 			</Row>
 		</section>

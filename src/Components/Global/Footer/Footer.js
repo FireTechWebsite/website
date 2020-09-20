@@ -24,7 +24,7 @@ const Footer = () => {
 	const data = useStaticQuery(query);
 
 	return (
-		<Row className={styles.footer}>
+		<Row className={styles.footer} id="contact">
 			<Col xs={12}>
 				<Row>
 					<Col xs={12} md={4} className={styles.content1}>
@@ -108,7 +108,7 @@ const Footer = () => {
 					<Col xs={12} md={4}>
 						<p>Copyrighted by Firetech Pvt Ltd</p>
 					</Col>
-					<Col xs={12} md={4} onClick={() => scrollTo('#navbar')}>
+					<Col xs={12} md={4} onClick={() => scrollTo('#navbar')} className={styles.goUp}>
 						Go to the top <FiArrowUpCircle className={styles.arrow} />
 					</Col>
 				</Row>
