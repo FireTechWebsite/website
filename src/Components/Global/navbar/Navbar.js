@@ -111,7 +111,9 @@ const Navbar = ({ textColor }) => {
 						<Col className={styles.mobileNav}>
 							<Row className={styles.mobileNavRow}>
 								<Col xs={4}>
-									<Img fluid={fluid} alt={title} />
+									<Link to="/">
+										<Img fluid={fluid} alt={title} />
+									</Link>
 								</Col>
 								<Col xs={2} className={styles.hamburgerHolder}>
 									<GiHamburgerMenu
