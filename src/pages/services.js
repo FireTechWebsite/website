@@ -5,10 +5,9 @@ import Layout from '../Components/Global/Layout/Layout';
 import ServicesCard from '../Components/HomePage/ServicesCard/ServicesCard';
 
 const services = ({ data }) => {
-	console.log(data);
 	return (
 		<Layout>
-			<Row>
+			<Row style={{ margin: '2rem 0rem' }}>
 				{data.allContentfulHomepage.nodes[0].servicesTypes.map((service) => (
 					<ServicesCard
 						fileName={service.file.fileName}
@@ -31,7 +30,7 @@ export const query = graphql`
 			nodes {
 				servicesTypes {
 					fluid(maxWidth: 2000, quality: 100) {
-						src
+						...GatsbyContentfulFluid
 					}
 					title
 					description
