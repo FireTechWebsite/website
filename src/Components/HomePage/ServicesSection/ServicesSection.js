@@ -68,7 +68,7 @@ const Services = ({ servicesTypes }) => {
 					</Slider>
 				</Col>
 				<Col xs={12} className={styles.swipe}>
-					SWIPER FOR MORE <BsArrowRight />
+					SWIPE FOR MORE <BsArrowRight />
 				</Col>
 			</Row>
 		</section>
