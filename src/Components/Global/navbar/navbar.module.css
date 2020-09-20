@@ -45,6 +45,9 @@
   display: flex;
   margin-top: 0.5rem;
 }
+.icon-holder:hover {
+  cursor: pointer;
+}
 
 .icon {
   font-size: 1.5rem;
@@ -73,6 +76,15 @@
 }
 
 .fullscreen-nav-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.map {
+  color: black;
+}
+
+.map:hover {
   color: black;
   text-decoration: none;
 }

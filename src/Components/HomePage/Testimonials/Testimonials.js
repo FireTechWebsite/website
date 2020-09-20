@@ -60,6 +60,8 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 		]
 	};
 
+	console.log(pastProjects);
+
 	return (
 		<Row className={styles.testimonials}>
 			<Col xs={12} md={5} className={styles.image}>
@@ -92,7 +94,9 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 			</Col>
 			<Col sm={12} className={styles.sliderHolder}>
 				<Slider {...settings} className={styles.slider}>
-					{pastProjects.map((project) => <ProjectCard src={project.fluid} content={project.title} />)}
+					{pastProjects.map((project) => (
+						<ProjectCard src={project.fluid} content={project.title} link={project.description} />
+					))}
 				</Slider>
 			</Col>
 		</Row>

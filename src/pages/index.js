@@ -57,6 +57,7 @@ export const query = graphql`
 						...GatsbyContentfulFluid
 					}
 					title
+					description
 				}
 				reviews {
 					Review {

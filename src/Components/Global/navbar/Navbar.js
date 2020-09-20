@@ -40,21 +40,39 @@ const Navbar = ({ textColor }) => {
 						<Col xs={12}>
 							<Row className={styles.logoHolder}>
 								<Col xs={4} md={2} lg={1} className={styles.logo}>
-									<Img fluid={fluid} alt={title} className={styles.img} />
+									<Link to="/">
+										<Img fluid={fluid} alt={title} className={styles.img} />
+									</Link>
 								</Col>
+
 								<Col xs={8}>
 									<Row>
 										<Col xs={4} className={styles.iconHolder}>
 											<AiOutlineMail className={styles.icon} />
-											Drop us an e-mail
+
+											<a
+												href="mailto:firetech@pan.lk"
+												className={styles.map}
+												target="_blank"
+												rel="nofollow noopener"
+											>
+												Drop us an e-mail
+											</a>
 										</Col>
-										<Col xs={4} className={styles.iconHolder}>
+										<Col xs={4} className={styles.iconHolder} onClick={() => scrollTo('#contact')}>
 											<AiOutlinePhone className={styles.icon} />
 											Let's talk about your project
 										</Col>
 										<Col xs={4} className={styles.iconHolder}>
 											<RiMapPin2Line className={styles.icon} />
-											Find us on Google Maps
+											<a
+												href="https://goo.gl/maps/pM97W2DGp3SFQr1e6"
+												className={styles.map}
+												target="_blank"
+												rel="nofollow noopener"
+											>
+												Find us on Google Maps
+											</a>
 										</Col>
 									</Row>
 								</Col>
