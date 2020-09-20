@@ -20,6 +20,9 @@ const Blog = ({ data }) => {
 						subtitle={post.description.description}
 						fileName={post.title}
 						src={post.image.fluid}
+						xs="12"
+						sm="6"
+						md="4"
 					/>
 				))}
 			</Row>

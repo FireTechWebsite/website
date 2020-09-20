@@ -109,7 +109,7 @@ export const query = graphql`
 				}
 			}
 		}
-		allContentfulBlogPosts(limit: 4, sort: { fields: publishedData, order: DESC }) {
+		allContentfulBlogPosts(limit: 3, sort: { fields: publishedData, order: DESC }) {
 			nodes {
 				title
 				slug
