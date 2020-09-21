@@ -66,7 +66,6 @@ const BlogPostTemplate = ({ data }) => {
 
 	const { json } = contentOfBlogPost;
 
-	console.log(data);
 	return (
 		<Layout>
 			<Row>
