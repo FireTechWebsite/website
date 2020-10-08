@@ -11,7 +11,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const query = graphql`
 	query {
-		allContentfulBlogPosts(limit: 4, sort: { fields: publishedData, order: DESC }) {
+		allContentfulBlogPosts(limit: 3, sort: { fields: publishedData, order: DESC }) {
 			nodes {
 				title
 				slug
@@ -77,23 +77,23 @@ const Footer = () => {
 						<p className={styles.title}>OUR CORE SERVICES</p>
 						<ul>
 							<li className={styles.linkHolder}>
-								<Link className={styles.link} to="f">
+								<Link className={styles.link} to="services/alarm-systems">
 									Alarm Systems
 								</Link>
 							</li>
 							<li className={styles.linkHolder}>
-								<Link className={styles.link} to="ff">
+								<Link className={styles.link} to="services/clean-agent-suppression-system">
 									Clean Agent Suppression System
 								</Link>
 							</li>
 							<li className={styles.linkHolder}>
-								<Link className={styles.link} to="ff">
+								<Link className={styles.link} to="services/hydrant-and-hose-reel-sprinkler-system">
 									Hydrant/Hose Reel Sprinkler System
 								</Link>
 							</li>
 							<li className={styles.linkHolder}>
-								<Link className={styles.link} to="ff">
-									Wet Chemical Kitchen Hood Suppression{' '}
+								<Link className={styles.link} to="services/wet-chemical-kitchen-hood-suppression">
+									Wet Chemical Kitchen Hood Suppression
 								</Link>
 							</li>
 						</ul>
