@@ -10,7 +10,7 @@ import globalstyles from '../../Global/global.module.css';
 
 const AboutUs = ({ src, alt, aboutUsService1, aboutUsService2, aboutUsService3, aboutUsTitle, aboutUsText }) => {
 	return (
-		<section>
+		<section id="about">
 			<Row className={styles.aboutUs}>
 				<Col xs={6} md={6} className={styles.image}>
 					<Img fluid={src} />

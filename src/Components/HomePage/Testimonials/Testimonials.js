@@ -72,7 +72,7 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 					<TitleText
 						title="TESTIMONIALS"
 						subtitle="WHAT OUR CLIENTS SAY ABOUT US"
-						content="We work very hard at making our name synonymous with quality and this is why our clients trust us"
+						content=""
 						xs="12"
 						md="8"
 					/>

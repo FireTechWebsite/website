@@ -3,6 +3,7 @@ import styles from './heroSection.module.css';
 import { Row, Col } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-background-image';
 import { Link } from 'gatsby';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const HeroSection = ({ src }) => {
 	return (
@@ -21,8 +22,10 @@ const HeroSection = ({ src }) => {
 								<Link to="services" className={styles.btn1}>
 									OUR SERVICES
 								</Link>
-								<Link className={styles.btn2} to="about">
-									ABOUT US
+								<Link className={styles.btn2}>
+									<button onClick={() => scrollTo('#about')} className={styles.innerBtn}>
+										ABOUT US
+									</button>
 								</Link>
 							</Col>
 						</Row>

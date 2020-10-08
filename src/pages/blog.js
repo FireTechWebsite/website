@@ -8,7 +8,7 @@ const Blog = ({ data }) => {
 	console.log(data);
 	return (
 		<Layout>
-			<Row>
+			<Row style={{ minHeight: '80vh' }}>
 				{data.allContentfulBlogPosts.nodes.map((post) => (
 					<Col xs={11} sm={6} lg={4}>
 						<ServicesCard

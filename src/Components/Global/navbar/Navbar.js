@@ -63,16 +63,9 @@ const Navbar = ({ textColor }) => {
 											<AiOutlinePhone className={styles.icon} />
 											Let's talk about your project
 										</Col>
-										<Col xs={4} className={styles.iconHolder}>
+										<Col xs={4} className={styles.iconHolder} onClick={() => scrollTo('#contact')}>
 											<RiMapPin2Line className={styles.icon} />
-											<a
-												href="https://goo.gl/maps/pM97W2DGp3SFQr1e6"
-												className={styles.map}
-												target="_blank"
-												rel="nofollow noopener"
-											>
-												Find us on Google Maps
-											</a>
+											Give us a visit
 										</Col>
 									</Row>
 								</Col>

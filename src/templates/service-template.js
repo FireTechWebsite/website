@@ -14,7 +14,6 @@ const ServicePage = ({ data }) => {
 		images,
 		nameOfService,
 		servieFeatures: { Features },
-		brochure: { file: { url } },
 		partnerLogos
 	} = data.contentfulServicePage;
 
@@ -42,32 +41,31 @@ const ServicePage = ({ data }) => {
 								<Accordion>
 									<Card>
 										<Accordion.Toggle as={Card.Header} eventKey="0">
-											<MdKeyboardArrowDown /> {feature.feature}
+											{feature.feature}
 										</Accordion.Toggle>
-										<Accordion.Collapse eventKey="0">
-											<Card.Body>{feature.content}</Card.Body>
-										</Accordion.Collapse>
 									</Card>
 								</Accordion>
 							))}
 						</Col>
-						<Col xs={12} md={8} className={styles.brochure}>
-							<Accordion>
-								<Card>
-									<a
-										href={url}
-										target="_blank"
-										rel=" noopener noreferrer"
-										download
-										className={styles.brochureText}
-									>
-										<Accordion.Toggle as={Card.Header} eventKey="0">
-											Download complete range of products <BsArrowRight />
-										</Accordion.Toggle>
-									</a>
-								</Card>
-							</Accordion>
-						</Col>
+						{data.contentfulServicePage.brochure ? (
+							<Col xs={12} md={8} className={styles.brochure}>
+								<Accordion>
+									<Card>
+										<a
+											href={url}
+											target="_blank"
+											rel=" noopener noreferrer"
+											download
+											className={styles.brochureText}
+										>
+											<Accordion.Toggle as={Card.Header} eventKey="0">
+												Download complete range of products <BsArrowRight />
+											</Accordion.Toggle>
+										</a>
+									</Card>
+								</Accordion>
+							</Col>
+						) : null}
 						<Col xs={11} md={8}>
 							{partnerLogos ? (
 								<Row className={styles.partnerLogos}>
