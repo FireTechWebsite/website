@@ -52,7 +52,7 @@ const ServicePage = ({ data }) => {
 								<Accordion>
 									<Card>
 										<a
-											href={url}
+											href={data.contentfulServicePage.brochure.file.url}
 											target="_blank"
 											rel=" noopener noreferrer"
 											download
