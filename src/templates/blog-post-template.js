@@ -6,7 +6,7 @@ import { MARKS, INLINES, BLOCKS } from '@contentful/rich-text-types';
 import { graphql } from 'gatsby';
 import Layout from '../Components/Global/Layout/Layout';
 import Img from 'gatsby-image';
-import Seo from '../Components/Global/Seo';
+import SEO from '../Components/Global/Seo';
 
 const website_url = 'https://firetech-staging.netlify.app/';
 
@@ -71,7 +71,8 @@ const BlogPostTemplate = ({ data }) => {
 
 	return (
 		<Layout>
-			<Seo title={titleOfPost} description={descriptionOfPost} image={fluid.src} pathname={slug} article />
+			<SEO title={titleOfPost} description={descriptionOfPost} image={fluid.src} pathname={slug} article />
+			{console.log(descriptionOfPost)}
 			<Row>
 				<Col xs={12} className={styles.blogPost}>
 					<Row className={styles.contentHolder}>
