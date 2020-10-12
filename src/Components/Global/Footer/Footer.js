@@ -35,7 +35,9 @@ const Footer = () => {
 						Lanka
 					</Col>
 					<Col xs={12} md={4} className={styles.content1}>
-						<MdEmail className={styles.logo} />EMAIL - firetech@pan.lk
+						<a href="mailto:firetech@pan.lk" className={styles.email}>
+							<MdEmail className={styles.logo} />EMAIL - firetech@pan.lk
+						</a>
 					</Col>
 				</Row>
 			</Col>

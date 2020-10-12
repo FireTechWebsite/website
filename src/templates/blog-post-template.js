@@ -4,13 +4,13 @@ import styles from '../Components/Global/Page-CSS/blogTemplate.module.css';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { MARKS, INLINES, BLOCKS } from '@contentful/rich-text-types';
 import { graphql } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
 import Layout from '../Components/Global/Layout/Layout';
 import Img from 'gatsby-image';
 
 const website_url = 'https://firetech-staging.netlify.app/';
 
 const BlogPostTemplate = ({ data }) => {
+	console.log(data);
 	const {
 		image: { fluid, title },
 		contentOfBlogPost,

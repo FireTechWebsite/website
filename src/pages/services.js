@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import Layout from '../Components/Global/Layout/Layout';
 import ServicesCard from '../Components/HomePage/ServicesCard/ServicesCard';
 

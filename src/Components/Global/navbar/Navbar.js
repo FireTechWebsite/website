@@ -41,7 +41,7 @@ const Navbar = ({ textColor }) => {
 							<Row className={styles.logoHolder}>
 								<Col xs={4} md={2} lg={1} className={styles.logo}>
 									<Link to="/">
-										<Img fluid={fluid} alt={title} className={styles.img} />
+										<Img fluid={fluid} alt={title} className={styles.img} alt="firetech logo" />
 									</Link>
 								</Col>
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import styles from '../Testimonials/testimonials.module.css';
@@ -59,8 +59,6 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 			}
 		]
 	};
-
-	console.log(pastProjects);
 
 	return (
 		<Row className={styles.testimonials}>
