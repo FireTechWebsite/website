@@ -9,7 +9,7 @@ module.exports = {
 
 	siteMetadata: {
 		title: 'Firetech',
-		titleTemplate: '%s',
+		titleTemplate: 'Firetech - %s',
 		description: `Welcome to Firetech, Sri Lanka's premier fire engineering company with over 35 years of experience`,
 		siteUrl: 'https://firetech-staging.netlify.app', // No trailing slash allowed!
 		image: 'https://i.ibb.co/2jxv9D5/index.png', // Path to your image you placed in the 'static' folder
