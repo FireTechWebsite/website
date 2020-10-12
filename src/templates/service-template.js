@@ -7,6 +7,7 @@ import Slider from 'react-slick';
 import styles from '../Components/Global/Page-CSS/serviceTemplate.module.css';
 import { BsArrowRight } from 'react-icons/bs';
 import SEO from '../Components/Global/Seo';
+import { v4 as uuidv4 } from 'uuid';
 
 const ServicePage = ({ data }) => {
 	const {
@@ -44,7 +45,7 @@ const ServicePage = ({ data }) => {
 						</Col>
 						<Col xs={12} md={8}>
 							{Features.map((feature) => (
-								<Accordion>
+								<Accordion key={uuidv4()}>
 									<Card>
 										<Accordion.Toggle as={Card.Header} eventKey="0">
 											{feature.feature}

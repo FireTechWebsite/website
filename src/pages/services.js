@@ -4,6 +4,7 @@ import { Row } from 'react-bootstrap';
 import Layout from '../Components/Global/Layout/Layout';
 import SEO from '../Components/Global/Seo';
 import ServicesCard from '../Components/HomePage/ServicesCard/ServicesCard';
+import { v4 as uuidv4 } from 'uuid';
 
 const services = ({ data }) => {
 	return (
@@ -23,7 +24,9 @@ const services = ({ data }) => {
 						src={service.fluid}
 						xs={12}
 						sm={6}
-						md={3}
+						md={4}
+						lg={3}
+						key={uuidv4()}
 					/>
 				))}
 			</Row>

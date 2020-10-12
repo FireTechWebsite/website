@@ -8,6 +8,7 @@ import { MdEmail } from 'react-icons/md';
 import Links from '../../../constants/Links';
 import { FiArrowUpCircle } from 'react-icons/fi';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { v4 as uuidv4 } from 'uuid';
 
 const query = graphql`
 	query {
@@ -55,7 +56,7 @@ const Footer = () => {
 						<p className={styles.title}>SITE MAP</p>
 						<ul>
 							{Links.map((link) => (
-								<li className={styles.linkHolder}>
+								<li className={styles.linkHolder} key={uuidv4()}>
 									<Link to={link.path} className={styles.link}>
 										{link.text}
 									</Link>
@@ -67,7 +68,7 @@ const Footer = () => {
 						<p className={styles.title}>LATEST NEWS</p>
 						<ul>
 							{data.allContentfulBlogPosts.nodes.map((post) => (
-								<li className={styles.linkHolder}>
+								<li className={styles.linkHolder} key={uuidv4()}>
 									<Link className={styles.link} to={`blog/${post.slug}`}>
 										{post.title}
 									</Link>

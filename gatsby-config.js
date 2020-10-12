@@ -12,7 +12,7 @@ module.exports = {
 		titleTemplate: '%s',
 		description: `Welcome to Firetech, Sri Lanka's premier fire engineering company with over 35 years of experience`,
 		siteUrl: 'https://firetech-staging.netlify.app', // No trailing slash allowed!
-		image: '/images/image.png', // Path to your image you placed in the 'static' folder
+		image: 'https://i.ibb.co/2jxv9D5/index.png', // Path to your image you placed in the 'static' folder
 		twitterUsername: '@FiretechSL',
 		author: 'firetech'
 	},

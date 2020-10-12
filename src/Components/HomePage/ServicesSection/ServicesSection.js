@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { BsArrowRight } from 'react-icons/bs';
+import { v4 as uuidv4 } from 'uuid';
 
 const Services = ({ servicesTypes }) => {
 	let settings = {
@@ -63,6 +64,7 @@ const Services = ({ servicesTypes }) => {
 								subtitle={service.description}
 								title={`services/${service.title}`}
 								src={service.fluid}
+								key={uuidv4()}
 							/>
 						))}
 					</Slider>

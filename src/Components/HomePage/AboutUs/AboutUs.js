@@ -5,7 +5,6 @@ import styles from '../AboutUs/aboutUs.module.css';
 import { FaRegBuilding } from 'react-icons/fa';
 import { MdBuild } from 'react-icons/md';
 import { GiFireExtinguisher } from 'react-icons/gi';
-import BackgroundImage from 'gatsby-background-image';
 import globalstyles from '../../Global/global.module.css';
 
 const AboutUs = ({ src, alt, aboutUsService1, aboutUsService2, aboutUsService3, aboutUsTitle, aboutUsText }) => {

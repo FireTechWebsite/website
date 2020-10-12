@@ -1,7 +1,8 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import TitleText from '../../Global/TitleText/TitleText';
 import ServicesCard from '../ServicesCard/ServicesCard';
+import { v4 as uuidv4 } from 'uuid';
 
 const Blog = ({ data }) => {
 	return (
@@ -22,7 +23,8 @@ const Blog = ({ data }) => {
 						src={post.image.fluid}
 						xs="12"
 						sm="6"
-						md="4"
+						lg="4"
+						key={uuidv4()}
 					/>
 				))}
 			</Row>

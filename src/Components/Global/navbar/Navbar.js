@@ -41,7 +41,7 @@ const Navbar = ({ textColor }) => {
 							<Row className={styles.logoHolder}>
 								<Col xs={4} md={2} lg={1} className={styles.logo}>
 									<Link to="/">
-										<Img fluid={fluid} alt={title} className={styles.img} alt="firetech logo" />
+										<Img fluid={fluid} className={styles.img} alt="firetech logo" />
 									</Link>
 								</Col>
 
@@ -54,7 +54,7 @@ const Navbar = ({ textColor }) => {
 												href="mailto:firetech@pan.lk"
 												className={styles.map}
 												target="_blank"
-												rel="nofollow noopener"
+												rel="nofollow noopener noreferrer"
 											>
 												Drop us an e-mail
 											</a>

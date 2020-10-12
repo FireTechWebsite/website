@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import { Col, Row } from 'react-bootstrap';
 import ServicesCard from '../Components/HomePage/ServicesCard/ServicesCard';
 import SEO from '../Components/Global/Seo';
+import { v4 as uuidv4 } from 'uuid';
 
 const Blog = ({ data }) => {
 	return (
@@ -14,7 +15,7 @@ const Blog = ({ data }) => {
 				description="Welcome to our blog where we share our expertise on fire engineering matters"
 				pathname="/blog"
 			/>
-			<Row style={{ minHeight: '80vh' }}>
+			<Row style={{ minHeight: '80vh', display: 'flex', justifyContent: 'center' }}>
 				{data.allContentfulBlogPosts.nodes.map((post) => (
 					<Col xs={11} sm={6} lg={4}>
 						<ServicesCard
@@ -22,6 +23,7 @@ const Blog = ({ data }) => {
 							subtitle={post.description.description}
 							fileName={post.title}
 							src={post.image.fluid}
+							key={uuidv4()}
 						/>
 					</Col>
 				))}

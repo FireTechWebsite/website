@@ -2,7 +2,6 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-background-image';
 import styles from '../ProjectCard/projectCard.module.css';
-import { CgArrowLongRight } from 'react-icons/cg';
 import { Link } from 'gatsby';
 
 const ProjectCard = ({ src, content, link }) => {
