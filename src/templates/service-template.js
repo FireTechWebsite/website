@@ -32,7 +32,7 @@ const ServicePage = ({ data }) => {
 		<Layout>
 			<SEO
 				title={nameOfService}
-				image="https://i.ibb.co/hXSwzS0/Our-Services.png"
+				image={images[0].fluid.src}
 				description={descriptionOfService}
 				pathname={`/services/${slug}`}
 			/>
