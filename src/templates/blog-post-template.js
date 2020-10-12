@@ -71,7 +71,7 @@ const BlogPostTemplate = ({ data }) => {
 			<Row>
 				<Col xs={12} className={styles.blogPost}>
 					<Row className={styles.contentHolder}>
-						<Col className={styles.coverImageHolder} xs={12}>
+						<Col className={styles.coverImageHolder} xs={12} style={{ padding: '0rem' }}>
 							<Img fluid={fluid} alt={title} className={styles.coverImage} />
 						</Col>
 						<Col xs={12} md={8} className={styles.blogPostContent}>

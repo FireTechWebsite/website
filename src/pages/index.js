@@ -24,6 +24,8 @@ const Home = ({ data }) => {
 		servicesTypes
 	} = data.allContentfulHomepage.nodes[0];
 
+	console.log(data);
+
 	return (
 		<Layout>
 			<HeroSection src={fluid} alt={title} />

@@ -92,9 +92,7 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 			</Col>
 			<Col sm={12} className={styles.sliderHolder}>
 				<Slider {...settings} className={styles.slider}>
-					{pastProjects.map((project) => (
-						<ProjectCard src={project.fluid} content={project.title} link={project.description} />
-					))}
+					{pastProjects.map((project) => <ProjectCard src={project.fluid} content={project.title} />)}
 				</Slider>
 			</Col>
 		</Row>

@@ -13,7 +13,7 @@ const AboutUs = ({ src, alt, aboutUsService1, aboutUsService2, aboutUsService3, 
 		<section id="about">
 			<Row className={styles.aboutUs}>
 				<Col xs={6} md={6} className={styles.image}>
-					<Img fluid={src} />
+					<Img fluid={src} alt={alt} />
 				</Col>
 
 				<Col xs={12} md={6} lg={5} className={styles.content}>
