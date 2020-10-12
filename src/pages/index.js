@@ -7,6 +7,7 @@ import ServicesSection from '../Components/HomePage/ServicesSection/ServicesSect
 import Partners from '../Components/HomePage/Partners/Partners';
 import Testimonials from '../Components/HomePage/Testimonials/Testimonials';
 import Blog from '../Components/HomePage/Blog/Blog';
+import Seo from '../Components/Global/Seo';
 
 const Home = ({ data }) => {
 	const {
@@ -28,6 +29,7 @@ const Home = ({ data }) => {
 
 	return (
 		<Layout>
+			<Seo title="Home" pathname="/" />
 			<HeroSection src={fluid} alt={title} />
 			<AboutUs
 				aboutUsService1={aboutUsService1}

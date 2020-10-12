@@ -6,6 +6,7 @@ import { MARKS, INLINES, BLOCKS } from '@contentful/rich-text-types';
 import { graphql } from 'gatsby';
 import Layout from '../Components/Global/Layout/Layout';
 import Img from 'gatsby-image';
+import Seo from '../Components/Global/Seo';
 
 const website_url = 'https://firetech-staging.netlify.app/';
 
@@ -16,7 +17,9 @@ const BlogPostTemplate = ({ data }) => {
 		contentOfBlogPost,
 		publishedData,
 		titleOfPost,
-		readingTime
+		readingTime,
+		description: { descriptionOfPost },
+		slug
 	} = data.contentfulBlogPosts;
 
 	const options = {
@@ -68,6 +71,7 @@ const BlogPostTemplate = ({ data }) => {
 
 	return (
 		<Layout>
+			<Seo title={titleOfPost} description={descriptionOfPost} image={fluid.src} pathname={slug} article />
 			<Row>
 				<Col xs={12} className={styles.blogPost}>
 					<Row className={styles.contentHolder}>
@@ -96,7 +100,11 @@ const BlogPostTemplate = ({ data }) => {
 export const query = graphql`
 	query($slug: String) {
 		contentfulBlogPosts(slug: { eq: $slug }) {
+			slug
 			titleOfPost: title
+			description {
+				descriptionOfPost: description
+			}
 			publishedData(formatString: "MMMM Do, YYYY")
 			readingTime
 			image {
