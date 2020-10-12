@@ -6,6 +6,7 @@ import { graphql } from 'gatsby';
 import Slider from 'react-slick';
 import styles from '../Components/Global/Page-CSS/serviceTemplate.module.css';
 import { BsArrowRight } from 'react-icons/bs';
+import SEO from '../Components/Global/SEO';
 
 const ServicePage = ({ data }) => {
 	const {
@@ -13,7 +14,8 @@ const ServicePage = ({ data }) => {
 		images,
 		nameOfService,
 		servieFeatures: { Features },
-		partnerLogos
+		partnerLogos,
+		slug
 	} = data.contentfulServicePage;
 
 	const settings = {
@@ -26,9 +28,14 @@ const ServicePage = ({ data }) => {
 		slidesToScroll: 1
 	};
 
-	console.log(data);
 	return (
 		<Layout>
+			<SEO
+				title={nameOfService}
+				image="https://i.ibb.co/hXSwzS0/Our-Services.png"
+				description={descriptionOfService}
+				pathname={`/services/${slug}`}
+			/>
 			<Row className={styles.service}>
 				<Col xs={12} md={5} className={styles.textBox}>
 					<Row>
@@ -104,6 +111,7 @@ const ServicePage = ({ data }) => {
 export const query = graphql`
 	query($slug: String) {
 		contentfulServicePage(slug: { eq: $slug }) {
+			slug
 			partnerLogos {
 				fluid(maxWidth: 2000, quality: 100) {
 					...GatsbyContentfulFluid

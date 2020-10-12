@@ -29,7 +29,7 @@ const Home = ({ data }) => {
 
 	return (
 		<Layout>
-			<SEO title="Home" description="description" pathname="/" />
+			<SEO title="Home" pathname="/" />
 			<HeroSection src={fluid} alt={title} />
 			<AboutUs
 				aboutUsService1={aboutUsService1}

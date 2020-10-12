@@ -3,11 +3,17 @@ import Layout from '../Components/Global/Layout/Layout';
 import { graphql } from 'gatsby';
 import { Col, Row } from 'react-bootstrap';
 import ServicesCard from '../Components/HomePage/ServicesCard/ServicesCard';
+import SEO from '../Components/Global/SEO';
 
 const Blog = ({ data }) => {
-	console.log(data);
 	return (
 		<Layout>
+			<SEO
+				title="Our Blog"
+				image="https://i.ibb.co/mcpkNBP/Our-Blog.png"
+				description="Welcome to our blog where we share our expertise on fire engineering matters"
+				pathname="/blog"
+			/>
 			<Row style={{ minHeight: '80vh' }}>
 				{data.allContentfulBlogPosts.nodes.map((post) => (
 					<Col xs={11} sm={6} lg={4}>
