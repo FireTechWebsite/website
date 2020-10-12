@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import Layout from '../Components/Global/Layout/Layout';
-import SEO from '../Components/Global/SEO';
+import SEO from '../Components/Global/Seo';
 import ServicesCard from '../Components/HomePage/ServicesCard/ServicesCard';
 
 const services = ({ data }) => {

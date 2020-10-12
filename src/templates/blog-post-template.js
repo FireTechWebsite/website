@@ -6,7 +6,7 @@ import { MARKS, INLINES, BLOCKS } from '@contentful/rich-text-types';
 import { graphql } from 'gatsby';
 import Layout from '../Components/Global/Layout/Layout';
 import Img from 'gatsby-image';
-import SEO from '../Components/Global/SEO';
+import SEO from '../Components/Global/Seo';
 
 const website_url = 'https://firetech-staging.netlify.app/';
 

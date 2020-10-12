@@ -6,7 +6,7 @@ import { graphql } from 'gatsby';
 import Slider from 'react-slick';
 import styles from '../Components/Global/Page-CSS/serviceTemplate.module.css';
 import { BsArrowRight } from 'react-icons/bs';
-import SEO from '../Components/Global/SEO';
+import SEO from '../Components/Global/Seo';
 
 const ServicePage = ({ data }) => {
 	const {

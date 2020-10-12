@@ -7,7 +7,7 @@ import ServicesSection from '../Components/HomePage/ServicesSection/ServicesSect
 import Partners from '../Components/HomePage/Partners/Partners';
 import Testimonials from '../Components/HomePage/Testimonials/Testimonials';
 import Blog from '../Components/HomePage/Blog/Blog';
-import SEO from '../Components/Global/SEO';
+import SEO from '../Components/Global/Seo';
 
 const Home = ({ data }) => {
 	const {

@@ -3,7 +3,7 @@ import Layout from '../Components/Global/Layout/Layout';
 import { graphql } from 'gatsby';
 import { Col, Row } from 'react-bootstrap';
 import ServicesCard from '../Components/HomePage/ServicesCard/ServicesCard';
-import SEO from '../Components/Global/SEO';
+import SEO from '../Components/Global/Seo';
 
 const Blog = ({ data }) => {
 	return (
