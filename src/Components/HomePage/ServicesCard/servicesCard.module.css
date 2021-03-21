@@ -9,7 +9,8 @@
 }
 
 .card:hover {
-  background-color: #f1803a;
+  background-color: white;
+  color:black
 }
 
 .link {

@@ -10,7 +10,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
+const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects,testimonialImage2  }) => {
 	const [ currentReviewNum, setcurrentReviewNum ] = useState(0);
 
 	const changeReview = () => {
@@ -65,7 +65,10 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 			<Col xs={12} md={5} className={styles.image}>
 				<Img fluid={testimonialHeaderImage.fluid} alt={testimonialHeaderImage.fluid.title} />
 			</Col>
-			<Col xs={12} md={5} className={styles.contentHolder}>
+			<Col xs={12} md={5} className={styles.image}>
+				<Img fluid={testimonialImage2 .fluid} />
+			</Col>
+			{/* <Col xs={12} md={5} className={styles.contentHolder}>
 				<Row>
 					<TitleText
 						title="TESTIMONIALS"
@@ -94,7 +97,7 @@ const Testimonials = ({ testimonialHeaderImage, reviews, pastProjects }) => {
 				<Slider {...settings} className={styles.slider}>
 					{pastProjects.map((project) => <ProjectCard src={project.fluid} content={project.title} />)}
 				</Slider>
-			</Col>
+			</Col> */}
 		</Row>
 	);
 };

@@ -20,6 +20,7 @@ const Home = ({ data }) => {
 		aboutUsText: { aboutUsText },
 		partners,
 		testimonialHeaderImage,
+		testimonialImage2 ,
 		reviews: { Review },
 		pastProjects,
 		servicesTypes
@@ -43,6 +44,7 @@ const Home = ({ data }) => {
 			<Partners partners={partners} />
 			<ServicesSection data={data} servicesTypes={servicesTypes} />
 			<Testimonials
+			    testimonialImage2={testimonialImage2 }
 				testimonialHeaderImage={testimonialHeaderImage}
 				reviews={Review}
 				pastProjects={pastProjects}
@@ -76,6 +78,11 @@ export const query = graphql`
 					}
 					title
 				}
+				testimonialImage2 {
+					fluid(maxWidth: 2000, quality: 100)  {
+						...GatsbyContentfulFluid
+					}
+				  }
 				heroImage {
 					fluid(maxWidth: 2000, quality: 100) {
 						...GatsbyContentfulFluid
@@ -106,8 +113,8 @@ export const query = graphql`
 					}
 				}
 				partners {
-					fluid(maxWidth: 2000, quality: 100) {
-						...GatsbyContentfulFluid
+					fixed(height:150,width:150, quality: 100) {
+						...GatsbyContentfulFixed
 					}
 					title
 				}

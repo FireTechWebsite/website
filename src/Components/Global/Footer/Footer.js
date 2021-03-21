@@ -29,15 +29,15 @@ const Footer = () => {
 			<Col xs={12}>
 				<Row>
 					<Col xs={12} md={4} className={styles.content1}>
-						<AiFillPhone className={styles.logo} />CONTACT US - 0114 410 558
+						<AiFillPhone className={styles.logo} />CONTACT US - +94 112 806613-6
 					</Col>
 					<Col xs={12} md={4} className={styles.content1}>
 						<RiMapPinFill className={styles.logo} />FIND US - 34, Walter Gunesekara Mawatha, Nawala. Sri
 						Lanka
 					</Col>
 					<Col xs={12} md={4} className={styles.content1}>
-						<a href="mailto:firetech@pan.lk" className={styles.email}>
-							<MdEmail className={styles.logo} />EMAIL - firetech@pan.lk
+						<a href="mailto:projects@firetech.lk" className={styles.email}>
+							<MdEmail className={styles.logo} />EMAIL - projects@firetech.lk
 						</a>
 					</Col>
 				</Row>
