@@ -21,8 +21,13 @@
   margin-bottom: 1rem;
 }
 
-.brochure {
+.brochure-heading {
+  text-align: center;
   margin-top: 2rem;
+}
+
+.brochure {
+  margin-top: 1rem;
 }
 
 .brochure-text {

@@ -16,8 +16,11 @@ const ServicePage = ({ data }) => {
 		nameOfService,
 		servieFeatures: { Features },
 		partnerLogos,
-		slug
+		slug,
+		brochures
 	} = data.contentfulServicePage;
+
+	console.log(data);
 
 	const settings = {
 		dots: true,
@@ -54,25 +57,28 @@ const ServicePage = ({ data }) => {
 								</Accordion>
 							))}
 						</Col>
-						{data.contentfulServicePage.brochure ? (
+						<Col xs={11} md={8}>
+							<h1 className={styles.brochureHeading}>Brochures</h1>
+						</Col>
+						{brochures.map((brochure) => (
 							<Col xs={12} md={8} className={styles.brochure}>
 								<Accordion>
 									<Card>
 										<a
-											href={data.contentfulServicePage.brochure.file.url}
+											href={brochure.file.url}
 											target="_blank"
 											rel=" noopener noreferrer"
 											download
 											className={styles.brochureText}
 										>
 											<Accordion.Toggle as={Card.Header} eventKey="0">
-												Download complete range of products <BsArrowRight />
+												{brochure.title} <BsArrowRight />
 											</Accordion.Toggle>
 										</a>
 									</Card>
 								</Accordion>
 							</Col>
-						) : null}
+						))}
 						<Col xs={11} md={8}>
 							{partnerLogos ? (
 								<Row className={styles.partnerLogos}>
@@ -118,7 +124,8 @@ export const query = graphql`
 					...GatsbyContentfulFluid
 				}
 			}
-			brochure {
+			brochures {
+				title
 				file {
 					url
 				}
