@@ -51,7 +51,7 @@ const Navbar = ({ textColor }) => {
 											<AiOutlineMail className={styles.icon} />
 
 											<a
-												href="mailto:firetech@pan.lk"
+												href="mailto:projects@firetech.lk"
 												className={styles.map}
 												target="_blank"
 												rel="nofollow noopener noreferrer"
