@@ -71,7 +71,13 @@ const BlogPostTemplate = ({ data }) => {
 
 	return (
 		<Layout>
-			<SEO title={titleOfPost} description={descriptionOfPost} image={fluid.src} pathname={slug} article />
+			<SEO
+				title={titleOfPost}
+				description={descriptionOfPost}
+				image={`https:${fluid.src}`}
+				pathname={slug}
+				article
+			/>
 
 			<Row>
 				<Col xs={12} className={styles.blogPost}>
