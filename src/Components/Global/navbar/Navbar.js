@@ -10,6 +10,7 @@ import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import { BsArrowRight } from 'react-icons/bs';
 import { RiMapPin2Line } from 'react-icons/ri';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { graphql } from 'gatsby';
 
 const query = graphql`
 	query MyQuery {
