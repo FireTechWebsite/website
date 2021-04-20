@@ -25,6 +25,26 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-smoothscroll`,
-		`gatsby-plugin-react-helmet`
+		`gatsby-plugin-react-helmet`,
+		{
+			resolve: `gatsby-plugin-google-gtag`,
+			options: {
+				// You can add multiple tracking ids and a pageview event will be fired for all of them.
+				trackingIds: [ 269596761 ],
+				gtagConfig: {
+					anonymize_ip: true,
+					cookie_expires: 0
+				},
+				// This object is used for configuration specific to this plugin
+				pluginConfig: {
+					// Puts tracking script in the head instead of the body
+					head: false,
+					// Setting this parameter is also optional
+					respectDNT: true,
+					// Avoids sending pageview hits from custom paths
+					exclude: [ '/preview/**', '/do-not-track/me/too/' ]
+				}
+			}
+		}
 	]
 };
